@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="../../anh/logo.png" type="image" style="width: 100%;">
+    <title> Stationery </title>
+    <link rel="stylesheet" href="trang_chu.css">
+    <link rel="stylesheet" href="trang_chu.js">
+    <!-- <link rel="stylesheet" href="icon.css"> -->
+    <link rel="stylesheet" href="style_main (1).css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row fixed-top" id="myHeader">
+            <!-- <div id="row1"> -->
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <h2 style="color: white;" class="title_logo"><a href="trang_chu.html"><img src="../../../anh/logo.png" alt="logo" width="75px" height="75px"><b id="title_lg"> STATIONERY</b></a></h2>
+                </div>
+                <div class="col-sm-5 col-md-5 col-lg-5">
+                    <div class="search">
+                        <input class="input" type="search" id="kw" placeholder="Tìm kiếm sản phẩm ... " style="font-weight: 100px;">
+                        <button class="button_search" type="submit" onclick="search()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 list_header">
+                    <div class="icon">
+                        <i class="fa-solid fa-house "></i>
+                    </div>
+                    <div class="text_header">
+                        <a href="trang_chu.html" id="text1">Trang chủ</a>
+                    </div>
+
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 list_header">
+                    <div class="icon">
+                        <i class="fa-solid fa-user "></i>
+                    </div>
+                    <div class="text_header">
+                        <a href="../dang_nhap/dang_nhap.html" id="text2">Đăng nhập</a>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 list_header">
+                    <div  onclick="opencart()" class="shopping ">
+                        <i class="fa-solid fa-cart-shopping " id="gio_hang"> </i>  
+                        <span class="quantity">0</span>
+                    </div>
+                    <div class="text_header">
+                        <p id="text3">Giỏ hàng</p>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </header>
+
+        <!--Main-->
+
+        <main class="Main">
+
+            <!-- open gio hang -->
+        <!-- <div id="header_cart" class="sticky-left">
+            <h1>Cart</h1>
+            <table style="margin: 0 5px;">
+                <thead>
+                    <tr>
+                        <th style="width: 60%;">Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>SL</th>
+                        <th>Chon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="checkout">
+            <div>
+               <span class="total">0</span>₫
+            </div>
+            <div onclick="closecart()" class="closecart">close</div>
+         </div>
+        </div> -->
+
+<!-- end gio hang -->
+
+            <!--ROW 2.1-->
+            <div class="row row2 Main1">
+                <div class="col-md-12 col-lg-3 menu">
+                    <div class="title_menu">
+                        <i class="fa-solid fa-list " style="color: black;"></i>
+                        <h2 class="title_logo" style="color: black;">Danh mục sản phẩm</h2>
+                    </div>
+                    <div class="list_menu1">
+                        <ul>
+                            <li class="list_menu_s1">
+                                <div><i class="fa-solid fa-pen fa-xl" style="color: red;"></i></div>
+                                <div><a href="#" id="ls">Bút</a></div>
+                                <div><p class="hot">Hot !!!</p></div>
+                            </li>
+                            <li class="list_menu_s1">
+                                <div><i class="fa-solid fa-eraser fa-xl" style="color: #1c8a14;"></i></div>
+                                <div> <a href="#" id="ls">Tẩy</a></div>
+                            </li>
+                            <li class="list_menu_s1">
+                                <div><i class="fa-solid fa-book fa-xl" style="color: #ab5c12;"></i></div>
+                                <div><a href="#" id="ls">Vở</a></div>
+                                <div><p class="hot">Hot !!!</p></div>
+                            </li>
+                            <li class="list_menu_s1">
+                                <div><i class="fa-solid fa-ruler fa-xl" style="color: #0c3683;"></i></div>
+                                <div><a href="#" id="ls">Thước</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-9 slide_show">
+
+                    <div class="album">  
+                        <div class="button_slide">
+                            <i class="fa-solid fa-circle-chevron-right slide-next" id="Next"  onclick="next()"></i>
+                            <i class="fa-solid fa-circle-chevron-left slide-prev" id="Prev" onclick="prev()"></i>
+                            <div class="slide_imgs">
+                                <img src="../../anh/anh1.jpg" alt="anh1" id="photo_1">
+                            </div>
+                        </div>
+                        <!-- <div class="slide_imgs">
+                            <img src="../../anh/anh1.jpg" alt="anh1" id="photo_1">
+                        </div> -->
+                    </div>
+                    <!-- <p id="count" style="color: white;"> 1/5 </p> -->
+                </div>
+                <div id="header_cart">
+                    <h1>Cart</h1>
+                    <table style="margin: 0 5px;">
+                        <thead>
+                            <tr>
+                                <th style="width: 60%;">Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>SL</th>
+                                <th>Chon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <div class="checkout">
+                    <div>
+                       <span class="total">0</span>₫
+                    </div>
+                    <div onclick="closecart()" class="closecart">close</div>
+                 </div>
+                </div>
+            </div>
+            <!--ROW 2.1-->
+
+            <!--ROW 2.2-->
+            <h2 style="color: black; font-weight: bold; padding-top: 35px; padding-bottom: 0px;">Các sản phẩm tiêu biểu</h2>
+            <div class="row row2 Main2">
+                <div class="list-item container2">
+                    <div class="content">
+                        <div class="list-item">
+                            <!-- san pham 1 -->
+                            <div class=" place-item">
+                                <img src="../anh/Bút Bi Thiên Long TL-093.webp" class="item-img">
+                                <div class="item-body">
+                                    <h4 class="item-name">Bút Bi Thiên Long TL-093</h4>
+                                    <span class="item-price">3.200</span><span>₫</span>
+                                </div>
+                                <button class="item-buy" >
+                                    <i class="item-buyicon ti-shopping-cart-full "></i>
+                                </button>
+                            </div>
+                            <!--san pham 2-->
+                            <div class=" place-item">
+                                <img src="../anh/bút chì 2b.webp" alt="Bút chì gỗ 2B Thiên Long GP-027" class="item-img">
+                                <div class="item-body">
+                                    <h4 class="item-name">Bút chì gỗ 2B Thiên Long GP-027</h4>
+                                    <span class="item-price">2.975</span><span>₫</span>
+                                </div>
+                                <button class="item-buy" >
+                                    <i class="item-buyicon ti-shopping-cart-full "></i>
+                                </button>
+                            </div>
+                            <!-- san pham 3 -->
+                            <div class=" place-item">
+                                <img src="../anh/Lotso.jpg" alt="" class="item-img">
+                                <div class="item-body">
+                                    <h4 class="item-name">Vở viết Ivory kẻ ngang</h4>
+                                    <span class="item-price">6.000</span><span>₫</span>
+                                </div>
+                                <button class="item-buy" >
+                                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                                </button>
+                            </div>
+                            <!-- san pham 4 -->
+                            <div class=" place-item">
+                                <img src="../anh/subaru.jpg" alt="" class="item-img">
+                                <div class="item-body">
+                                    <h4 class="item-name">Vở học sinh ô li </h4>
+                                    <span class="item-price">7.500</span><span>₫</span>
+                                </div>
+                                <button class="item-buy" >
+                                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                                  </button>
+                            </div>
+                            <!-- san pham 5 -->
+                            <div class=" place-item">
+                                <img src="../anh/Gôm tẩy nhân vật hoạt hình Gấu Pooh Disney Thiên Long E-032PO.webp" alt="" class="item-img">
+                                <div class="item-body">
+                                    <h4 class="item-name">Gôm tẩy hình Gấu Pooh Disney Thiên Long E-032/PO</h4>
+                                    <span class="item-price">5.400</span><span>₫</span>
+                                </div>
+                                <button class="item-buy" >
+                                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                                  </button>
+                            </div>
+                            <!-- san pham 6 -->
+                            <div class=" place-item">
+                                <img src="../anh/gom_thien_long_e-06__9_.webp" alt="" class="item-img">
+                                <div class="item-body">
+                                    <h4 class="item-name">Gôm tẩy xóa chì Thiên Long E-06</h4>
+                                    <span class="item-price">3.800</span><span>₫</span>
+                                    
+                                </div>
+                                <button class="item-buy" >
+                                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                                  </button>
+                            </div>
+                            <!-- san pham 7 -->
+                            <div class=" place-item">
+                                <img src="../anh/Thước thẳng Flexoffice FO-SR02.webp" alt="" class="item-img">
+                                <div class="item-body">
+                                    <h4 class="item-name">Thước thẳng Flexoffice FO-SR02</h4>
+                                    <span class="item-price">4.500</span><span>₫</span>
+                                    
+                                </div>
+                                <button class="item-buy" >
+                                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                                  </button>
+                            </div>
+                            <!-- san pham 8 -->
+                            <div class="place-item">
+                                <img src="../anh/thuoc_deo_pp_thien_long_-_diem_10_sr-023__2_.webp" alt="" class="item-img">
+                                <div class="item-body">
+                                    <h4 class="item-name">Thước dẻo PP Điểm 10 SR-023</h4>
+                                    <span class="item-price">3.000</span><span>₫</span>
+                                    
+                                </div>
+                                <button class="item-buy" >
+                                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ROW 2.2-->
+
+            <!--Back Top-->
+            <div id="btn_bt">
+                <a href="javascript:;" onclick="gotoTop()"><i class="fa-solid fa-circle-arrow-up" id="btn_gtt"></i></a>
+            </div>
+        </main>
+    
+        <!--Main-->
+
+
+        <footer class="row row3" style="padding-top: 30px;">
+            <div class="col-md-12 col-lg-4">
+                <h2 class="title_logo_footer" style="margin-bottom: 0px;"><img src="../../anh/logo.png" alt="logo" style="height: 100px; width: 100px;"><b>STATIONERY</b></h2>                
+                <h2 class="title_logo" style="margin-bottom: 20px;">Stationary - một trang web về văn phòng phẩm.</h3>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <h2 class="title_logo">Địa chỉ liên hệ</h2>
+                <p style="margin-top: 20px;">Kí túc xá Đại học Giao thông vận tải Hà Nội.</p>
+                <p>99 Nguyễn Chí Thanh, Láng Thượng, Đống Đa, Hà Nội.</p>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <h2 class="title_logo">Hỗ trợ khách hàng</h2>
+                <p style="margin-top: 20px;">
+                    - SĐT: 1900 XXXX
+                    <br>
+                    - Email: abc@gmail.com
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script type="text/javascript" src="trang_chu.js"></script>
+<script src="thanh_search.js"></script>
+<script src="cart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>

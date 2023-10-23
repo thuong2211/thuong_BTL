@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_main (1).css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assert/trang_chu.css">
+    <!-- trang chu css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- header -->
+<section class="header">
+    <header class="row row-header">
+        <div id="row1 row">
+            <div class="col-sm-2.5 col-md-3 col-lg-3">
+                <img src="../anh/logo.png" alt="logo" width="75px" height="75px" >
+                <h2 style="color:#fff;" class="title_logo"><a href="trang_chu.html"><b> STATIONERY</b></a></h2>
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-5">
+                <div class="search">
+                    <input class="input" type="search" placeholder="Tìm kiếm sản phẩm ... " style="font-weight: 100px;">
+                    <button class="button_search" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-1.5 col-md-1 col-lg-1 list_header">
+                <div class="icon">
+                    <i class="fa-solid fa-phone "></i>
+                </div>
+                <div class="text_header">
+                    <p>LIÊN HỆ:<br> 1900 XXXX</p>
+                </div>
+
+            </div>
+            <div class="col-sm-1.5 col-md-1 col-lg-1 list_header">
+                <div class="icon">
+                    <i class="fa-solid fa-user "></i>
+                </div>
+                <div class="text_header">
+                    <a href="dangnhap.html" class="text_header">Đăng nhập</a>
+                </div>
+            </div>
+            <!-- gio hang -->
+            <div class="col-sm-1.5 col-md-1 col-lg-1 list_header">
+                <div  onclick="opencart()" class="shopping ">
+                    <i class="fa-solid fa-cart-shopping "> </i>  
+                    <span class="quantity">0</span>
+                </div>
+                <div class="text_header">
+                    <a href="gio_hang.html" class="text_header">Giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+</section>
+<!-- end header -->
+
+<!-- open gio hang -->
+<div id="header_cart">
+    <h1>Cart</h1>
+    <table style="margin: 0 5px;">
+        <thead>
+            <tr>
+              <th style="width: 60%;">Sản phẩm</th>
+              <th>Giá</th>
+              <th>SL</th>
+              <th>Chon</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="checkout">
+        <div>
+            <span class="total">0</span>₫
+        </div>
+        <div onclick="closecart()" class="closecart">close</div>
+    </div>
+</div>
+
+<!-- end gio hang -->
+
+    <div class="content">
+        <div class="list-item">
+            <!-- san pham 1 -->
+            <div class=" place-item">
+                <img src="..anh/Bút Bi Thiên Long TL-093.webp" class="item-img">
+                <div class="item-body">
+                    <h4 class="item-name">Bút Bi Thiên Long TL-093</h4>
+                    <span class="item-price">3.200</span><span>₫</span>
+                </div>
+                <button class="item-buy" >
+                    <i class="item-buyicon ti-shopping-cart-full "></i>
+                </button>
+            </div>
+            <!-- san pham 2 -->
+            <div class=" place-item">
+                <img src="../anh/bút chì 2b.webp" alt="Bút chì gỗ 2B Thiên Long GP-027" class="item-img">
+                <div class="item-body">
+                    <h4 class="item-name">Bút chì gỗ 2B Thiên Long GP-027</h4>
+                    <span class="item-price">2.975</span><span>₫</span>
+                </div>
+                <button class="item-buy" >
+                    <i class="item-buyicon ti-shopping-cart-full "></i>
+                </button>
+            </div>
+            <!-- san pham 3 -->
+            <div class=" place-item">
+                <img src="../anh/Lotso.jpg" alt="" class="item-img">
+                <div class="item-body">
+                    <h4 class="item-name">Vở viết Ivory kẻ ngang</h4>
+                    <span class="item-price">6.000</span><span>₫</span>
+                </div>
+                <button class="item-buy" >
+                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                </button>
+            </div>
+            <!-- san pham 4 -->
+            <div class=" place-item">
+                <img src="../anh/subaru.jpg" alt="" class="item-img">
+                <div class="item-body">
+                    <h4 class="item-name">Vở học sinh ô li </h4>
+                    <span class="item-price">7.500</span><span>₫</span>
+                </div>
+                <button class="item-buy" >
+                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                  </button>
+            </div>
+            <!-- san pham 5 -->
+            <div class=" place-item">
+                <img src="../anh/Gôm tẩy nhân vật hoạt hình Gấu Pooh Disney Thiên Long E-032PO.webp" alt="" class="item-img">
+                <div class="item-body">
+                    <h4 class="item-name">Gôm tẩy hình Gấu Pooh Disney Thiên Long E-032/PO</h4>
+                    <span class="item-price">5.400</span><span>₫</span>
+                </div>
+                <button class="item-buy" >
+                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                  </button>
+            </div>
+            <!-- san pham 6 -->
+            <div class=" place-item">
+                <img src="../anh/gom_thien_long_e-06__9_.webp" alt="" class="item-img">
+                <div class="item-body">
+                    <h4 class="item-name">Gôm tẩy xóa chì Thiên Long E-06</h4>
+                    <span class="item-price">3.800</span><span>₫</span>
+                    
+                </div>
+                <button class="item-buy" >
+                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                  </button>
+            </div>
+            <!-- san pham 7 -->
+            <div class=" place-item">
+                <img src="../anh/Thước thẳng Flexoffice FO-SR02.webp" alt="" class="item-img">
+                <div class="item-body">
+                    <h4 class="item-name">Thước thẳng Flexoffice FO-SR02</h4>
+                    <span class="item-price">4.500</span><span>₫</span>
+                    
+                    
+                </div>
+                <button class="item-buy" >
+                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                  </button>
+            </div>
+            <!-- san pham 8 -->
+            <div class="place-item">
+                <img src="../anh/thuoc_deo_pp_thien_long_-_diem_10_sr-023__2_.webp" alt="" class="item-img">
+                <div class="item-body">
+                    <h4 class="item-name">Thước dẻo PP Điểm 10 SR-023</h4>
+                    <span class="item-price">3.000</span><span>₫</span>
+                    
+                </div>
+                <button class="item-buy" >
+                    <i class=" ti-shopping-cart-full item-buyicon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="cart.js"></script>
+</html>
