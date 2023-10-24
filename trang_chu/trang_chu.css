@@ -7,10 +7,15 @@
     background-color: rgb(6, 74, 169);
 }
 
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 #myHeader{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding-left: 0px;
     padding-right: 0px;
     margin-bottom: 50px;
@@ -18,13 +23,13 @@
 }
 
 /*header*/
-/* #row1{
+#row1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 0px;
-    padding-right: 0px;
-} */
+    padding-left: auto;
+    padding-right: auto;
+}
 
 /*logo*/
 .title_logo{
@@ -43,9 +48,11 @@
     border-radius: 75px;
     display: grid;
     grid-template-columns: 85% 15%;
-    margin-top: 5px;
+    /* margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 40px;
+    margin-left: 40px; */
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .input {
@@ -67,7 +74,7 @@
     width: 400px;
 }
 .button_search {
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     height: 38.75px;
     padding: 5px 5px;
     border-top-right-radius: 17.5px;
@@ -187,13 +194,11 @@ footer{
 }
 
 .Main1{
-    margin-top: 20%;
     max-width: 1700px;
     margin-bottom: 30px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 260px;
 }
 .menu{
     display: grid;
@@ -371,18 +376,3 @@ footer{
 
 
 /*responsive*/
-/*col*/
-/* .col-3{
-    margin-left: 10px;
-    margin-bottom: 15px;
-}
-.col-12{
-    margin-bottom: 10px;
-}
-.col-12 h2{
-    font-size: 15px;
-    margin-left: 80px;
-}
-.col-12 .search{
-    margin-left: 40px;
-} */

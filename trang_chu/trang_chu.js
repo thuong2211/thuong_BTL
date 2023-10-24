@@ -60,12 +60,12 @@ function gotoTop() {
 
 
 var arr_photo=[
-  "../../anh/anh1.jpg",
-  "../../anh/anh44.webp",
-  "../../anh/anh55.webp",
-  "../../anh/anh2.jpg",
-  "../../anh/anh22.webp",
-  "../../anh/anh33.webp"
+  "../anh/anh1.jpg",
+  "../anh/anh44.webp",
+  "../anh/anh55.webp",
+  "../anh/anh2.jpg",
+  "../anh/anh22.webp",
+  "../anh/anh33.webp"
 ]
 
 var index=0;

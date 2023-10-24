@@ -2,19 +2,33 @@
     box-sizing: border-box;
 }
 
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .row3{
     background-color: rgb(6, 74, 169);
 }
 
 /*header*/
 #myHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-left: 0px;
     padding-right: 0px;
     background-color: rgb(6, 74, 169);
+    width: 100%;
     /* margin-bottom: 50px; */
+}
+
+/*header*/
+#row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: auto;
+    padding-right: auto;
+    margin-left: 0px;
+    margin-right: 0px; */
 }
 
 /*logo*/
@@ -33,9 +47,8 @@
     border-radius: 75px;
     display: grid;
     grid-template-columns: 85% 15%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .input {
     border: none;
@@ -152,7 +165,7 @@ footer{
 
 /*MAIN*/
 .row2{
-    background-image: url(../../anh/background.avif);
+    background-image: url(../anh/background.avif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -256,3 +269,45 @@ label input{
 #btn_bt a{
     display: block;
 } */
+
+/* ipad */
+@media only screen and (min-width: 740px) and (max-width: 1023px){
+    .col-md-0{
+        display: none;
+    }
+    .col-md-12{
+        margin-bottom: 8px;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 739px) {
+    .col-sm-0{
+        display: none;
+    }
+    .list-item .place-item{
+        flex:0 0 45%;
+    }
+    .list_header{
+        flex:0 0 32%;
+    }
+    .col-sm-12{
+        margin-bottom: 5px;
+    }
+    .row>*{
+        padding-right: 0 !important;
+    }
+    #myHeader{
+        position: relative;
+        z-index: 0;
+    }
+    .dn{
+        max-width: 80%;
+    }
+    .title_logo{
+        font-size: 15px;
+    }
+    .title_logo p{
+        font-size: 13px;
+    }
+}
