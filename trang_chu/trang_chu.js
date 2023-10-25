@@ -26,7 +26,7 @@ window.onscroll = function(){
     text2.style.color = "rgb(6, 74, 169)";
     text3.style.color = "rgb(6, 74, 169)";
     text4.style.color = "rgb(6, 74, 169)";
-    text5.style.color = "rgb(232, 161, 62)"
+    text5.style.color = "white"
     
   }else{
     header.style.backgroundColor = "rgb(6, 74, 169)";
