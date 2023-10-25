@@ -100,12 +100,12 @@ function inputChange(){
 //----chi so gio hang-----
 function indexcong(){
     var add = document.querySelector('.quantity')
-    add.innerHTML++
+    // add.innerHTML++
     
 }
 function indextru(){
     var tru = document.querySelector('.quantity')
-     tru.innerHTML--
+    //  tru.innerHTML--
 }
 
 
