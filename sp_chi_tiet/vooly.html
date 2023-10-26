@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="anh/logo.png" type="image" style="width: 100%;">
+    <title> Stationery </title>
+    <link rel="stylesheet" href="trangchu1.css">
+    <link rel="stylesheet" href="trangchu1.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row sticky-top" id="myHeader">
+            <div id="row1">
+                <div class="col-sm-2.5 col-md-2.5 col-lg-2.5">
+                    <h2 style="color: white;" class="title_logo"><a href="trangchu1.html"><img src="anh/logo.png" alt="logo" width="75px" height="75px" ><b id="title_lg"> STATIONERY</b></a></h2>
+                </div>
+                <div class="col-sm-5 col-md-5 col-lg-5">
+                    <div class="search">
+                        <input class="input" type="search" id="kw" placeholder="Tìm kiếm sản phẩm ... " style="font-weight: 100px;">
+                        <button class="button_search" type="submit" onclick="search()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-1.5 col-md-1.5 col-lg-1.5 list_header">
+                    <div class="icon">
+                        <i class="fa-solid fa-house "></i>
+                    </div>
+                    <div class="text_header">
+                        <a href="https://thuong2211.github.io/thuong_btl/trang_chu/trang_chu.html" id="text1">Trang chủ</a>
+                    </div>
+
+                </div>
+                <div class="col-sm-1.5 col-md-1.5 col-lg-1.5 list_header">
+                    <div class="icon">
+                        <i class="fa-solid fa-user "></i>
+                    </div>
+                    <div class="text_header">
+                        <a href="../dang_nhap/dang_nhap.html" id="text2">Đăng nhập</a>
+                    </div>
+                </div>
+                <div class="col-sm-1.5 col-md-1.5 col-lg-1.5 list_header">
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </div>
+                    <div class="text_header">
+                        <a href="gio_hang.html" id="text3">Giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="product">
+            <div class="container">
+                <div class="product-content rownhieu">
+                    <div class="product-content-left rownhieu">
+                        <div class="product-content-left-big-img">
+                            <img src="anh/trang_chu/subaru.jpg" alt="sản phẩm số 1">
+                        </div>
+                        <div class="product-content-left-small-img">
+                            <img src="anh/trang_chu/subaru4.jpg" alt="sản phẩm số 1">
+                            <img src="anh/trang_chu/subaru2.jpg" alt="sản phẩm số 1">
+                            <img src="anh/trang_chu/subaru3.jpg" alt="sản phẩm số 1">
+                        </div>
+                    </div>
+                    <div class="product-content-right">
+                        <div class="product-content-right-name">
+                            <h1>Vở kẻ ngang 120 trang LOTSO LS123</h1>
+                            <p>Mã sản phẩm: 22312938</p>
+                        </div>
+                        <div class="product-content-right-price">
+                            <p>12.000<sup>đ</sup></p>
+                        </div>
+                        <div class="lien">
+                            <div class="mot">
+                        <div class="quantity">
+                            <p style="font-weight: bold;">Số lượng: </p>
+                            <input type="number" min="0" value="1">
+                        </div>
+                        </div>
+                        <div class="product-content-right-tlong">
+                            <div class="product-content-right-tlong-ip"> 
+                                <i class="fas fa-truck" ></i><p>Giao hàng toàn quốc</p>
+                            </div>
+                            <div class="product-content-right-tlong-ip">
+                                <i class="fas fa-star"></i><p>Sản phẩm chính hãng</p>
+                            </div>
+                            <div class="product-content-right-tlong-ip">
+                                <i class="fas fa-gift"></i><p>Tích điểm đổi quà</p>
+                            </div>
+                            <div class="product-content-right-tlong-ip">
+                                <i class="fas fa-ticket-alt"></i><p>Nhiều khuyến mãi, ưu đãi</p>
+                            </div>  
+                        </div>
+                    </div>
+                        
+                        <div class="product-content-right-button">
+                            <button id="addToCartButton">
+                              <i class="fas fa-shopping-cart"></i><p>THÊM VÀO GIỎ</p>
+                            </button>
+                            <button><a href="https://thuong2211.github.io/thuong_btl/dang_nhap/dang_nhap.html?fbclid=IwAR3mQT4Ocy1yOcRuw1lvGe8eyJwt5DTtADpJsDdnPnIQfVH-b_DT23JOsZE">MUA NGAY</a></button>
+                          </div>
+                         
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Main-->
+        <main class="container">
+
+
+            <!--Back Top-->
+            <div id="btn_bt">
+                <a href="javascript:;" onclick="gotoTop()"><i class="fa-solid fa-circle-arrow-up" id="btn_gtt"></i></a>
+            </div>
+        </main>
+        <!--Main-->
+
+        <footer class="row row3">
+            <div class="col-md-12 col-lg-4">
+                <h2 class="title_logo_footer" style="margin-bottom: 0px;"><img src="anh/logo.png" alt="logo" style="height: 100px; width: 100px;"><b>STATIONERY</b></h2>                
+                <h2 class="title_logo">Stationary - một trang web về văn phòng phẩm.</h3>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <h2 class="title_logo">Địa chỉ liên hệ</h2>
+                <p style="margin-top: 20px;">Kí túc xá Đại học Giao thông vận tải Hà Nội.</p>
+                <p>99 Nguyễn Chí Thanh, Láng Thượng, Đống Đa, Hà Nội.</p>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <h2 class="title_logo">Hỗ trợ khách hàng</h2>
+                <p style="margin-top: 20px;">
+                    - SĐT: 1900 XXXX
+                    <br>
+                    - Email: abc@gmail.com
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script type="text/javascript" src="trangchu1.js"></script>
+<script src="thanh_search.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>
